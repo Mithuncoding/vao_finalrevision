@@ -254,7 +254,8 @@ function Home(root) {
     btn('⚡ Quick 20', () => startQuiz(pickSet('all', 20, true), 'Quick 20'), 'tile'),
     btn(`❌ Mistakes (${mcount})`, () => go('#/mistakes'), 'tile'),
     btn('⏱️ Mock test', () => go('#/mock'), 'tile'),
-    btn('📘 Notes', () => go('#/notes'), 'tile')));
+    btn('� Study book', () => { location.href = 'book.html'; }, 'tile'),
+    btn('�📘 Notes', () => go('#/notes'), 'tile')));
   root.append(h('p', { class: 'foot' }, `${S.meta.cards} questions · ${S.decks.filter((x) => x.paper).length} official KEA papers · progress saved on this phone`));
 }
 

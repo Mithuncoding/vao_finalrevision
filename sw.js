@@ -1,8 +1,9 @@
-const VERSION = 'c8267659a2';
+const VERSION = 'd3894a9051';
 const SHELL = `vao-shell-${VERSION}`;
 const MEDIA = 'vao-media';
 const ASSETS = ['./', 'index.html', 'css/app.css', 'js/app.js', 'js/core.js', 'manifest.webmanifest',
-  'icons/icon-192.png', 'icons/icon-512.png', 'data/bank.json', 'data/library.json', 'data/notes.json'];
+  'icons/icon-192.png', 'icons/icon-512.png', 'data/bank.json', 'data/library.json', 'data/notes.json',
+  'book.html', 'VAO_2026_Complete_Study_Book.pdf'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(SHELL)
